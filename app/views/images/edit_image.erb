@@ -1,0 +1,10 @@
+<h1> Edit </h1>
+
+<form action="/images/<%=@image.id%>" method="POST">
+  <label>Edit Image</label><br>
+  <input type="hidden" name="_method" value="patch">
+  <input type="text" name="caption" value="<%=@image.caption%>"><br>
+  <input type="submit" value="submit">
+</form>
+
+<a href="/images">Cancel</a>

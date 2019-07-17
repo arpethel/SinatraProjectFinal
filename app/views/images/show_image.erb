@@ -1,0 +1,13 @@
+<h1>Image</h1>
+
+<%= @image.caption %>
+
+<form action="/images/<%=@image.id%>/delete" method="POST"><br><br>
+  <label>Delete This Photo</label>
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Photo">
+</form>
+
+<a href="/images/<%=@image.id%>/edit">Edit Photo</a><br>
+<a href="/images/new">Upload New Photo Here</a><br>
+<a href="/images">Home</a>

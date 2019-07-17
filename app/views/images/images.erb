@@ -1,0 +1,10 @@
+<h1>Welcome, <%= current_user.username %></h1>
+<a href="/logout">Logout</a>
+
+<h3><a href="/images/new">Create New image Here</a></h3>
+
+<% @images.each do |image| %>
+  <%= image.caption %>
+
+  <br><br>
+<% end %>
